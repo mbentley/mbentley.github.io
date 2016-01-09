@@ -5,7 +5,7 @@ set -x
 
 sudo apt-get update
 
-apt-get install -y apt-transport-https curl linux-image-extra-virtual linux-image-extra-$(uname -r)
+sudo apt-get install -y apt-transport-https curl linux-image-extra-virtual linux-image-extra-$(uname -r)
 
 curl -s 'https://sks-keyservers.net/pks/lookup?op=get&search=0xee6d536cf7dc86e2d7d56f59a178ac6c6238f52e' | sudo apt-key add --import
 
